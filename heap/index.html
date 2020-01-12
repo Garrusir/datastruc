@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heap</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Двоичная куча</h1>
+    <form>
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="number" id="addValue">
+        <label class="mdl-textfield__label" for="addValue">Введите число</label>
+      </div>
+    </form>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="addButton">
+      Добавить число
+    </button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="removeButton">
+      Удалить максимальный элемент
+    </button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="sortButton">
+      Отсортировать
+    </button>
+    <div class="result">
+      <div> Представление в массиве: <span id="result"></span></div>
+     <div> Отсортированный массив:  <span id="sorted"></span></div>
+    </div>
+  </div>
+</body>
+</html>
+
+<style type="text/css">
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .result {
+    margin-top: 20px;
+  }
+</style>
